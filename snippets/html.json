@@ -1,0 +1,152 @@
+{
+/*
+	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	 // same ids are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"Tmaker-position":{
+		"prefix": "Tmaker-position",
+		"body": [
+			"<!--Tmaker bot=\"position\" target=\"${1:_blank}\" separate=\"$2\"--><!--/Tmaker-->"
+		],
+		"description": "当前位置"
+	},
+
+	"Tmaker-current-node":{
+		"prefix": "Tmaker-current-node",
+		"body": [
+			"<!--Tmaker bot=\"current-node\" type=\"${1:linkname}\" style=\"${2:current}\"--><!--/Tmaker-->"
+		],
+		"description": "当前栏目"
+	},
+
+	"Tmaker-single-node":{
+		"prefix": "Tmaker-single-node",
+		"body": [
+			"<!--Tmaker bot=\"single-node\" type=\"${1:linkname}\" from=\"${2:nodeid}\"--><!--/Tmaker-->"
+		],
+		"description": "单个栏目"
+	},
+
+	"Tmaker-title-list":{
+		"prefix": "Tmaker-title-list",
+		"body": [
+			"<!--Tmaker bot=\"title-list\" from=\"${1:nodeid}\" filter=\"${2:all}\" order=\"${3:desc}\" loop=\"${4:1-5}\"-->",
+			"	$5",
+			"<!--/Tmaker-->"
+		],
+		"description": "高级标题列表"
+	},
+
+	"Tmaker-title-list-page":{
+		"prefix": "Tmaker-title-list-page",
+		"body": [
+			"<!--Tmaker bot=\"title-list-page\" from=\"${1:nodeid}\" filter=\"${2:all}\" dayspan=\"${3:40}\" spanmode=\"${4:5}\" loop=\"${5:1-5}\" firstpage=\"${6:首页}\" finallypage=\"${7:尾页}\" lastpage=\"${8:上一页}\" nextpage=\"${9:下一页}\" isshow=\"${10:1}\"-->",
+			"	$11",
+			"<!--/Tmaker-->"
+		],
+		"description": "高级分页标题列表"
+	},
+
+	"Tmaker-class-list":{
+		"prefix": "Tmaker-class-list",
+		"body": [
+			"<!--Tmaker bot=\"class-list\" from=\"${1:nodeid}\" type=\"${2:children}\" loop=\"${3:1-8}\"-->",
+			"	$4",
+			"<!--/Tmaker-->"
+		],
+		"description": "高级栏目列表"
+	},
+
+	"Tmaker-content":{
+		"prefix": "Tmaker-content",
+		"body": [
+			"<!--Tmaker bot=\"content\"  firstpage=\"${1:首页}\" finallypage=\"${2:尾页}\" lastpage=\"${3:上一页}\" nextpage=\"${4:下一页}\" isshow=\"${5:1}\"-->",
+			"	$6",
+			"<!--/Tmaker-->"
+		],
+		"description": "文章内容"
+	},
+
+	"Tmaker-related-article":{
+		"prefix": "Tmaker-related-article",
+		"body": [
+			"<!--Tmaker bot=\"related-article\"  loop=\"${1:1-5}\"-->",
+			"	$2",
+			"<!--/Tmaker-->"
+		],
+		"description": "相关稿件标题列表"
+	},
+
+	"Tmaker-pre-next-article":{
+		"prefix": "Tmaker-pre-next-article",
+		"body": [
+			"<!--Tmaker bot=\"pre-next-article\" prearticle=\"${1:上一篇}\" nextarticle=\"${2:下一篇}\"-->",
+			"	$3",
+			"<!--/Tmaker-->"
+		],
+		"description": "上下篇稿件列表"
+	},
+
+	"Tmaker-attach-list":{
+		"prefix": "Tmaker-attach-list",
+		"body": [
+			"<!--Tmaker bot=\"attach-list\" atttype=\"${1:1}\" attext=\"${2:jpg}\" articleid=\"${3:articleid}\" nodeid=\"${4:nodeid}\" dayspan=\"${5:5}\"-->",
+			"	$6",
+			"<!--/Tmaker-->"
+		],
+		"description": "附件列表"
+	},
+
+	"Tmaker-web-count":{
+		"prefix": "Tmaker-web-count",
+		"body": [
+			"<!--Tmaker bot=\"web-count\" site=\"${1:cnmil}\" page=\"${2:node}\"--><!--/Tmaker-->"
+		],
+		"description": "天润基业访问统计页头"
+	},
+
+	"Tmaker-wechat-share":{
+		"prefix": "Tmaker-wechat-share",
+		"body": [
+			"<!--Tmaker bot=\"wechat-share\" version=\"${1:1.0.0}\"--><!--/Tmaker-->"
+		],
+		"description": "微信分享"
+	},
+
+	"data-slot":{
+		"prefix":"data-slot",
+		"body": [
+			"<${1:div} data-slot=\"${2}\"></${1:div}>"
+		],
+		"description": "data slot"
+	},
+
+	"data-slot-region":{
+		"prefix":"data-slot-region",
+		"body": [
+			"<!--region:${1:name}-->",
+			"${2}",
+			"<!--region:${1:name}-->"
+		],
+		"description": "data slot region"
+	},
+
+	"data-slot-region-position":{
+		"prefix":"data-slot-region-position",
+		"body": [
+			"<!--region:${1:name}/-->"
+		],
+		"description": "data slot region position"
+	}
+}
