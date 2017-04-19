@@ -3,11 +3,11 @@
     "displayName": "Tmaker Snippet",
     "publisher": "Gauliang",
     "description": "Tmaker Snippet for Visual Studio Code",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "engines": {
         "vscode": "^0.10.x"
     },
-	"repository":"https://github.com/gauliang/tmaker-snippet",
+    "repository": "https://github.com/gauliang/tmaker-snippet",
     "categories": [
         "Snippets"
     ],
