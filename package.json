@@ -3,7 +3,7 @@
     "displayName": "Tmaker Snippet",
     "publisher": "Gauliang",
     "description": "Tmaker Snippet for Visual Studio Code",
-    "version": "0.9.5",
+    "version": "0.9.6",
     "engines": {
         "vscode": "^0.10.x"
     },
