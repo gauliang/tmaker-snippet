@@ -1,19 +1,4 @@
 {
-/*
-	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
-	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	 // same ids are connected.
-	 // Example:
-	 "Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
-*/
 	"Tmaker-position":{
 		"prefix": "Tmaker-position",
 		"body": [
@@ -42,7 +27,7 @@
 		"prefix": "Tmaker-title-list",
 		"body": [
 			"<!--Tmaker bot=\"title-list\" from=\"${1:nodeid}\" filter=\"${2:all}\" order=\"${3:desc}\" loop=\"${4:1-5}\"-->",
-			"	$5",
+			"\t$5",
 			"<!--/Tmaker-->"
 		],
 		"description": "高级标题列表"
@@ -52,7 +37,7 @@
 		"prefix": "Tmaker-title-list-page",
 		"body": [
 			"<!--Tmaker bot=\"title-list-page\" from=\"${1:nodeid}\" filter=\"${2:all}\" dayspan=\"${3:40}\" spanmode=\"${4:5}\" loop=\"${5:1-5}\" firstpage=\"${6:首页}\" finallypage=\"${7:尾页}\" lastpage=\"${8:上一页}\" nextpage=\"${9:下一页}\" isshow=\"${10:1}\"-->",
-			"	$11",
+			"\t$11",
 			"<!--/Tmaker-->"
 		],
 		"description": "高级分页标题列表"
@@ -62,7 +47,7 @@
 		"prefix": "Tmaker-class-list",
 		"body": [
 			"<!--Tmaker bot=\"class-list\" from=\"${1:nodeid}\" type=\"${2:children}\" loop=\"${3:1-8}\"-->",
-			"	$4",
+			"\t$4",
 			"<!--/Tmaker-->"
 		],
 		"description": "高级栏目列表"
@@ -72,7 +57,7 @@
 		"prefix": "Tmaker-content",
 		"body": [
 			"<!--Tmaker bot=\"content\"  firstpage=\"${1:首页}\" finallypage=\"${2:尾页}\" lastpage=\"${3:上一页}\" nextpage=\"${4:下一页}\" isshow=\"${5:1}\"-->",
-			"	$6",
+			"\t$6",
 			"<!--/Tmaker-->"
 		],
 		"description": "文章内容"
@@ -82,7 +67,7 @@
 		"prefix": "Tmaker-related-article",
 		"body": [
 			"<!--Tmaker bot=\"related-article\"  loop=\"${1:1-5}\"-->",
-			"	$2",
+			"\t$2",
 			"<!--/Tmaker-->"
 		],
 		"description": "相关稿件标题列表"
@@ -92,7 +77,7 @@
 		"prefix": "Tmaker-pre-next-article",
 		"body": [
 			"<!--Tmaker bot=\"pre-next-article\" prearticle=\"${1:上一篇}\" nextarticle=\"${2:下一篇}\"-->",
-			"	$3",
+			"\t$3",
 			"<!--/Tmaker-->"
 		],
 		"description": "上下篇稿件列表"
@@ -102,7 +87,7 @@
 		"prefix": "Tmaker-attach-list",
 		"body": [
 			"<!--Tmaker bot=\"attach-list\" atttype=\"${1:1}\" attext=\"${2:jpg}\" articleid=\"${3:articleid}\" nodeid=\"${4:nodeid}\" dayspan=\"${5:5}\"-->",
-			"	$6",
+			"\t$6",
 			"<!--/Tmaker-->"
 		],
 		"description": "附件列表"
@@ -122,6 +107,61 @@
 			"<!--Tmaker bot=\"wechat-share\" version=\"${1:1.0.0}\"--><!--/Tmaker-->"
 		],
 		"description": "微信分享"
+	},
+
+	"Tmaker-loop":{
+		"prefix":"lg-loop",
+		"body":[
+			"<!--loop data=\"${1:0-10}\" -->",
+			"\t$2",
+			"<!--/loop-->"
+		],
+		"description":"逻辑：循环稿件"
+	},
+	"Tmaker-class":{
+		"prefix":"lg-class",
+		"body":[
+			"<!--class-->",
+			"\t$1",
+			"<!--/class-->"
+		],
+		"description":"逻辑：栏目"
+	},
+	"Tmaker-subclass":{
+		"prefix":"lg-subclass",
+		"body":[
+			"<!--subclass-->",
+			"\t$1",
+			"<!--/subclass-->"
+		],
+		"description":"逻辑：子栏目"
+	},
+	"Tmaker-article":{
+		"prefix":"lg-article",
+		"body":[
+			"<!--article-->",
+			"\t$1",
+			"<!--/article-->"
+		],
+		"description":"逻辑：稿件"
+	},
+	"Tmaker-articlelist":{
+		"prefix":"lg-articlelist",
+		"body":[
+			"<!--articlelist filter=\"${1:all}\" -->",
+			"\t$2",
+			"<!--/articlelist-->"
+		],
+		"description":"逻辑：稿件列表"
+	},
+	"Tmaker-attachment":{
+		"prefix":"lg-attachment",
+		"body":[
+			"<!--attachment-->",
+			"\t$1",
+			"<!--/attachment-->"
+		],
+		"description":"逻辑：附件"
 	},
 
 	"data-slot":{
